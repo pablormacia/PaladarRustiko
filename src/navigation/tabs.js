@@ -1,0 +1,66 @@
+import React from "react";
+import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import CartNavigator from "./cart";
+import ShopNavigator from "./shop";
+import OrdersNavigator from "./orders";
+import {Ionicons} from "@expo/vector-icons";
+import { colors } from "../constants/themes";
+
+const BottomTab = createBottomTabNavigator();
+
+const TabsNavigator = ()=>{
+    return(
+        <BottomTab.Navigator
+            initialRouteName="ShopTab"
+            screenOptions={{
+                headerShown:false,
+            }}
+        
+        >
+            <BottomTab.Screen
+                name="ShopTab"
+                component= {ShopNavigator}
+                options ={{
+                    title: 'Productos',
+                    tabBarIcon: ({focused}) => (
+                        <Ionicons
+                            name={focused ? "home" : "home-outline"}
+                            size={22}
+                            color={colors.primary}
+                        />        
+                    )
+                }}
+            />
+           <BottomTab.Screen
+                name="OrdersTab"
+                component= {OrdersNavigator}
+                options ={{
+                    title: 'Pedidos',
+                    tabBarIcon: ({focused}) => (
+                        <Ionicons
+                            name={focused ? "file-tray-full" : "file-tray-full-outline"}
+                            size={22}
+                            color={colors.primary}
+                        />        
+                    )
+                }}
+            />
+            <BottomTab.Screen
+                name="CartTab"
+                component= {CartNavigator}
+                options ={{
+                    title: 'Carrito',
+                    tabBarIcon: ({focused}) => (
+                        <Ionicons
+                            name={focused ? "cart" : "cart-outline"}
+                            size={22}
+                            color={colors.primary}
+                        />        
+                    )
+                }}
+            />
+        </BottomTab.Navigator>    
+    )
+}
+
+export default TabsNavigator;

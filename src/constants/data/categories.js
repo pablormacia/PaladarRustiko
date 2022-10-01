@@ -1,27 +1,29 @@
+import { colors } from "../themes";
+
 export const categories = [
     {
         id: 1,
         title: 'Fideos',
-        color: '#C8CAED'
+        color: colors.background
     },
     {
         id: 2,
         title: 'Sorrentinos',
-        color: '#C8CAED'
+        color: colors.background
     },
     {
         id: 3,
         title: 'Varenikes',
-        color: '#C8CAED'
+        color: colors.background
     },
     {
         id: 4,
         title: 'Raviolones',
-        color: '#C8CAED'
+        color: colors.background
     },
     {
         id: 5,
         title: 'Especiales',
-        color: '#C8CAED'
+        color: colors.background
     }
 ]

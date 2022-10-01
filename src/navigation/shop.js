@@ -13,7 +13,7 @@ const ShopNavigator = () => {
         screenOptions={{
             headerStyle: {
                 // backgroundColor:isAndroid ? colors.background : colors.secondary;
-                backgroundColor: colors.background,
+                backgroundColor: colors.primary,
             },
             headerTintColor: colors.white,
             headerTitleStyle:{
