@@ -40,7 +40,7 @@ export const products = [
         price: 500
     },
     {
-        id: 4,
+        id: 13,
         categoryId: 3,
         title: 'Varenikes tradicionales',
         description: 'Pastas tradicionales de Ucrania. Rellenos de ricota, papa y nuez',
@@ -48,7 +48,7 @@ export const products = [
         price: 600
     },
     {
-        id: 5,
+        id: 14,
         categoryId: 3,
         title: 'Varenikes con panceta',
         description: 'Pastas tradicionales de Ucrania. Rellenos de ricota, papa, nuez y panceta',
