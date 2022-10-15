@@ -3,10 +3,10 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container:{
         flex: 1,
-        borderRudius:18,
+        borderRadius:5,
         marginHorizontal: 20,
         marginVertical: 10,
-        height: 150
+        height: 120
     },
     contentContainer: {
         flex:1,
@@ -24,6 +24,15 @@ export const styles = StyleSheet.create({
     title: {
         fontFamily: 'Lato-Bold',
         fontSize:20,
+    },
+    headerContainer:{
+
+    },
+    quantity:{
+
+    },
+    price: {
+
     }
 
 });

@@ -1,0 +1,1 @@
+export const URL_API = 'https://paladar-rustiko-default-rtdb.firebaseio.com/';
